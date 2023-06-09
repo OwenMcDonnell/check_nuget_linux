@@ -26,7 +26,7 @@ test_script:
 #       <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
 #       </packageSources>
 #       </configuration>' > ~/.nuget/NuGet/NuGet.Config
-   - sh: dotnet nuget list source --format Detailed
+  - sh: dotnet nuget list source --format Detailed
 #   - sh: |
 #         if [[ $(dotnet tool list -g) != *"cake.tool"* ]]; then
 #           dotnet tool install -g Cake.Tool
