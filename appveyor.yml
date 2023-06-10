@@ -1,5 +1,5 @@
-image: ubuntu
-
+build_cloud: AWS us-west-2 t2.nano
+image: Linux
 init:
   - appveyor version
   - ps: Update-AppveyorBuild -Message "Image '$env:APPVEYOR_BUILD_WORKER_IMAGE'@'$env:APPVEYOR_BUILD_WORKER_CLOUD' cloud. $env:APPVEYOR_REPO_COMMIT_MESSAGE"
